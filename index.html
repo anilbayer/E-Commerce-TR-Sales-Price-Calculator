@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Sales Price Calculator</h2>
+
+        <label for="purchasePrice">Alış Fiyatı Giriniz (Purchase Price):</label>
+        <input type="number" id="purchasePrice" placeholder="Enter purchase price">
+
+        <label for="exchangeRate">Döviz Kuru ($KUR) (Exchange Rate):</label>
+        <input type="number" id="exchangeRate" value="38" placeholder="Enter exchange rate">
+
+        <label for="commission">Komisyon (%) (Commission %):</label>
+        <input type="number" id="commission" value="16.5" placeholder="Enter commission percentage">
+
+        <label for="shippingCompany">Kargo Firması (Shipping Company):</label>
+        <select id="shippingCompany">
+            <option value="57.25">Aras Kargo</option>
+            <option value="59.08">Sürat Kargo</option>
+            <option value="53.34">Trendyol Express</option>
+            <option value="55.14">Hepsijet</option>
+            <option value="80.03">Yurtiçi Kargo</option>
+        </select>
+
+
+<button onclick="calculate()">Hesapla (Calculate)</button>
+
+        <div class="output">
+            <p><strong>Toplam Maliyet (Total Cost):</strong> <span id="totalCost">0</span></p>
+            <p><strong>KDV Tutarı (VAT Amount):</strong> <span id="vat">0</span></p>
+            <p><strong>Kargo Ücreti (Shipping Cost):</strong> <span id="shippingCostDisplay">0</span></p>
+            <p><strong>Tahmini Satış Fiyatı (Estimated Sale Price):</strong> <span id="salePrice">0</span></p>
+            <p><strong>Tahmini Komisyon (Estimated Commission):</strong> <span id="estimatedCommission">0</span></p>
+            <p><strong>Tahmini Kar (Estimated Profit):</strong> <span id="profit">0</span></p>
+			<p><strong>Tahmini Kar (KDV Düşülmüş) (Estimated Profit):</strong> <span id="profitvat">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
