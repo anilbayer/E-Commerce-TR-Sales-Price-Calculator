@@ -1,10 +1,5 @@
 # Sales Price Calculator
 
-
-# [LIVE PREVIEW]([url](https://raw.githack.com/anilbayer/ecommercetrsalespricecalculator/refs/heads/main/.github/workflows/calculator.html))
-
-A simple web-based **Sales Price Calculator** to calculate total costs, sales prices, commissions, shipping costs, VAT amounts, and profits. This tool is useful for businesses that need to estimate the pricing and profitability of products, factoring in variables like purchase price, exchange rates, commissions, shipping companies, and VAT.
-
 ## Description
 
 This project consists of an HTML page with embedded CSS for styling and JavaScript for calculating various financial figures based on user input. The calculator allows users to enter their **purchase price**, **exchange rate**, **commission rate**, and **shipping company**, then displays the following:
